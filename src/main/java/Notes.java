@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class Notes {
 	public static void main(String[] args) {
@@ -39,9 +40,20 @@ class Notes {
 		b = dog;
 		c = horse;
 
-		a.talk();
-		b.talk();
-		c.talk();
+		// a.purr();
+		cat = (Cat)a;
+		cat.purr();
+
+		Animal[] animals = {a, b, c};
+
+		for (int i = 0; i < animals.length; i++) {
+			animals[i].talk();
+			
+		}
+
+		// a.talk();
+		// b.talk();
+		// c.talk();
 
 		animalTalk(cat);
 		animalTalk(a);

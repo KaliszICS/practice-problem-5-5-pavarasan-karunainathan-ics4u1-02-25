@@ -4,6 +4,10 @@ class Cat extends Animal implements Moveable {
 		
 	}
 
+	public void purr() {
+		System.out.println("purr");
+	}
+
 	@Override
 	public void talk() {
 		System.out.println("Meow");
